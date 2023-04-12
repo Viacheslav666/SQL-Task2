@@ -44,6 +44,7 @@ UPDATE employee SET city_id = 1 WHERE id = 3;
 UPDATE employee SET city_id = 1 WHERE id = 1;
 UPDATE employee SET city_id = 2 WHERE id = 4;
 UPDATE employee SET city_id = 3 WHERE id = 5;
+INSERT INTO city VALUES (4, 'Perm');
 SELECT employee.first_name, employee.last_name, city.city_name FROM employee INNER JOIN city
 ON employee.city_id = city.city_id;
 SELECT city_name, employee.first_name, employee.last_name FROM employee RIGHT JOIN city
